@@ -17,17 +17,30 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
 }
 
-p {
-  margin-top: 0;
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
 }
 
-a, a:visited, a:active {
+h2 {
+  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+}
+
+p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+a,
+a:visited,
+a:active {
   text-decoration: none;
 }
 
@@ -77,9 +90,6 @@ a, a:visited, a:active {
     background-color: hsl(206, 59%, 49%);
   }
 }
-.grid__sidebar {
-  background-color: hsl(300, 100%, 30%);
-}
 @media (max-width: 56.24875em) {
   .grid__sidebar {
     text-align: center;
@@ -89,4 +99,11 @@ a, a:visited, a:active {
   .grid__sidebar {
     text-align: right;
   }
+}
+.grid__widget, .grid__widget--green {
+  background-color: hsl(300, 89%, 52%);
+  padding: 1rem;
+}
+.grid__widget--green {
+  background-color: rgb(43, 175, 131);
 }

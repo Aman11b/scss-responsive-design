@@ -46,7 +46,7 @@
     }
 
     &__sidebar{
-        background-color: hsl(300, 100%, 30%);
+        
         // max-width large to small
         
         @include u.breakpoint-down(medium){
@@ -56,5 +56,21 @@
         @include u.breakpoint-down(small){
             text-align: right;
         }
+    }
+
+    &__widget {
+        $widget: &;
+        background-color: hsl(300, 89%, 52%);
+        padding: u.rem(16);
+
+        // modifier
+        &--green{
+            // @extend .grid__widget;
+            @extend #{$widget};
+            background-color: rgb(43, 175, 131);
+        }
+
+        // extend at rule
+
     }
 }
