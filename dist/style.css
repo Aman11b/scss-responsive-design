@@ -44,7 +44,7 @@ a, a:visited, a:active {
   width: min(100% - 40px, 1000px);
   margin-inline: auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
   .grid {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -62,6 +62,31 @@ a, a:visited, a:active {
 .grid__main {
   background-color: hsl(240, 99%, 33%);
 }
+@media (min-width: 43.75em) {
+  .grid__main {
+    background-color: hsl(120, 84%, 44%);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(39, 100%, 35%);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(206, 59%, 49%);
+  }
+}
 .grid__sidebar {
   background-color: hsl(300, 100%, 30%);
+}
+@media (max-width: 56.24875em) {
+  .grid__sidebar {
+    text-align: center;
+  }
+}
+@media (max-width: 43.785em) {
+  .grid__sidebar {
+    text-align: right;
+  }
 }
